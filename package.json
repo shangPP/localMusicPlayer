@@ -1,0 +1,38 @@
+{
+	"name": "electron-quick-start",
+	"version": "1.0.0",
+	"description": "A simple local music player",
+	"main": "main.js",
+	"scripts": {
+		"start": "nodemon --watch main.js --exec electron .",
+		"dist": "electron-builder",
+		"buildApp": "electron-packager ./ 本地音乐播放器 --platform=win32 --arch=x64 --out ./outApp --overwrite --icon=./logo.ico"
+	},
+	"build": {
+		"productName": "本地音乐播放器",
+		"appId": "localMusicPlayer",
+		"win": {
+			"icon": "./logo.png"
+		}
+	},
+	"keywords": [
+		"Electron",
+		"quick",
+		"start",
+		"tutorial",
+		"demo"
+	],
+	"author": "2206957543@qq.com",
+	"license": "CC0-1.0",
+	"devDependencies": {
+		"electron": "^22.2.0",
+		"electron-builder": "^23.6.0",
+		"electron-packager": "^17.1.1",
+		"nodemon": "^2.0.20"
+	},
+	"dependencies": {
+		"bootstrap": "^5.2.3",
+		"electron-store": "^8.1.0",
+		"uuid": "^9.0.0"
+	}
+}

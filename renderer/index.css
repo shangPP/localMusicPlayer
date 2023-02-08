@@ -1,0 +1,9 @@
+* {
+  user-select: none;
+}
+
+.progress:hover,
+#tracksList .col-2 .fa-play:hover,
+#tracksList .col-2 .fa-trash:hover {
+  cursor: pointer;
+}
